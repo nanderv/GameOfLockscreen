@@ -1,5 +1,10 @@
 import -window root -resize 1920x1080 screenshot1.png
-love . 1 &
+OUTPUT="$(ps e | grep -Po " DISPLAY=[\.0-9A-Za-z:]* " | sort -u | wc -l)"
+echo $OUTPUT
+for (( i=1; i<=$OUTPUT; i++ ))
+do
+love . $i &
+done
 xtrlock
 killall love
 rm screenshot1.png
