@@ -4,6 +4,7 @@ dispNum = 0
 function love.load(args)
 	winX, winY = love.window.getDesktopDimensions( args[2] )
 	dispNum = args[2]
+	love.window.setFullscreen(true, "desktop")
 	love.window.setMode(winX, winY, {display=tonumber(dispNum)})
 	require 'loadState'
 end
