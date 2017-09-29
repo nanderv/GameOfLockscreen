@@ -1,10 +1,16 @@
 state = {}
-local timer = 0;
+local timer = -3;
 dispNum = 0
+offsetX = 0
+offsetY = 0
 function love.load(args)
 	winX, winY = love.window.getDesktopDimensions( args[2] )
 	dispNum = args[2]
-	print(dispNum)
+	print(dispNum, love.window.getDisplayCount(  ) )
+	if dispNum =="1" and  love.window.getDisplayCount(  ) == 2 then
+		print("HERE")
+		offsetY = 1080
+	end
 	--love.window.setFullscreen(true, "desktop")
 	love.window.setMode(winX, winY, {display=tonumber(dispNum)})
 	love.window.setFullscreen(true,"desktop")

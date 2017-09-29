@@ -1,5 +1,5 @@
-import -window root screenshot1.png
-import -window root screenshot2.png
+import -window root screenshot.png
+
 
 OUTPUT="$(xrandr |  grep " connected" | wc -l)"
 echo $OUTPUT
@@ -9,4 +9,4 @@ love . $i &
 done
 xtrlock
 killall love
-rm screenshot1.png
+rm screenshot.png
