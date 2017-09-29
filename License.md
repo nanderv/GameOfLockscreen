@@ -1,3 +1,6 @@
+BSD 3-clause license
+--------------------
+
 Copyright (c) 2016, Nander Voortman (with a little help from some friends)
 
 All rights reserved.
