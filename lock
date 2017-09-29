@@ -1,5 +1,5 @@
-import -window root -resize 1920x1080 screenshot1.png
-import -window root -resize 1920x1080 screenshot2.png
+import -window root screenshot1.png
+import -window root screenshot2.png
 
 OUTPUT="$(xrandr |  grep " connected" | wc -l)"
 echo $OUTPUT
