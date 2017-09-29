@@ -1,0 +1,5 @@
+import -window root -resize 1920x1080 screenshot1.png
+love . 1 &
+xtrlock
+killall love
+rm screenshot1.png
