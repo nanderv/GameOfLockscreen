@@ -4,6 +4,7 @@ dispNum = 0
 function love.load(args)
 	winX, winY = love.window.getDesktopDimensions( args[2] )
 	dispNum = args[2]
+	print(dispNum)
 	--love.window.setFullscreen(true, "desktop")
 	love.window.setMode(winX, winY, {display=tonumber(dispNum)})
 	love.window.setFullscreen(true,"desktop")

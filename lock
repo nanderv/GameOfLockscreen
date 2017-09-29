@@ -1,5 +1,5 @@
 import -window root -resize 1920x1080 screenshot1.png
-OUTPUT="$(ps e | grep -Po " DISPLAY=[\.0-9A-Za-z:]* " | sort -u | wc -l)"
+OUTPUT="$(xrandr |  grep " connected" | wc -l)"
 echo $OUTPUT
 for (( i=1; i<=$OUTPUT; i++ ))
 do
