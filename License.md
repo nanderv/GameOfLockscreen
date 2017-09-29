@@ -1,4 +1,4 @@
-BSD 3-clause license
+BSD 3-clause license-extended
 --------------------
 
 Copyright (c) 2016, Nander Voortman (with a little help from some friends)
@@ -12,6 +12,8 @@ Redistribution and use in source and binary forms, with or without modification,
 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
 
 3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+4. If this software gets used 'in the wild', it has to be changed to look significantly differently before using. The purpose of this lockscreen is to have something different; using the default setup would defeat the purpose.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
 AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
